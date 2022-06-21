@@ -12,17 +12,9 @@ handler.before = async function (m, { user, isBotAdmin, isAdmin }) {
 
   if (chat.antiLink && isGroupLink) {
 
-    await m.reply(`*「 ANTI LINKS 」*\n*Hasta la vista baby👋, ${await this.getName(m.sender)} rompiste las reglas serás exterminado....!!*`)
+    await m.reply(`*「 𝐄𝐍𝐋𝐀𝐂𝐄 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐃𝐎 」*\n*𝐂𝐇𝐎𝐋𝐎 𝐑𝐄𝐂𝐎𝐍𝐂𝐇𝐀𝐃𝐄𝐓𝐔𝐌𝐀𝐃𝐑𝐄 𝐐𝐔𝐄 𝐂𝐇𝐂𝐇 𝐄𝐍𝐕𝐈𝐀𝐒 𝐓𝐔 𝐋𝐈𝐍𝐊 𝐀🐟𝐓🐻, ${await this.getName(m.sender)} 𝐒𝐀𝐅𝐀 𝐍𝐎 𝐌𝐀𝐒 𝐈𝐃𝐈𝐎𝐓𝐎𝐍*`)
 
-    await m.reply(`*Tienes 3 segundos para eliminar el link y retractarte...!!!!*`)
-
-    await m.reply(`*3!!*`)
-
-    await m.reply(`*2!!*`)
-
-    await m.reply(`*1!!*`)
-
-    if (isAdmin) return m.reply('*Te salvaste cagon(a) eres admin, no puedo eliminarte :v*')
+    if (isAdmin) return m.reply('*𝐓𝐄 𝐒𝐀𝐋𝐕𝐀𝐒𝐓𝐄 𝐂𝐀𝐆𝐎𝐍 𝐄𝐑𝐄𝐒 𝐀𝐃𝐌𝐈𝐍, 𝐍𝐎 𝐏𝐔𝐄𝐃𝐎 𝐄𝐋𝐈𝐌𝐈𝐍𝐀𝐑𝐓𝐄🤴*')
 
     if (!isBotAdmin) return m.reply('*El bot no es admin, no puede exterminar a las personas*')
 
@@ -32,7 +24,7 @@ handler.before = async function (m, { user, isBotAdmin, isAdmin }) {
 
     let isgclink = isLinkThisGc.test(m.text)
 
-    if (isgclink) return m.reply('*Lol.. enviaste el enlace de este grupo :v*')
+    if (isgclink) return m.reply('*𝐓𝐄𝐑𝐑𝐈𝐁𝐋𝐄 𝐋𝐈𝐍𝐊*')
 
     await this.groupRemove(m.chat, [m.sender])
 
